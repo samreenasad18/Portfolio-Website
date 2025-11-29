@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio - Page 2</title>
+    <link href="htpps://fonts.googleapis.com/css2?family=Poopins:wght@300;400;600;&display=swap" rel="stylesheet">
+
+    <style>
+        a, button{
+            transition: all 0.2s ease;
+        }
+
+        /*  PAGE BACKGROUND */
+        body {
+            font-family: 'Poopins', sans-serif;
+            background: #dce7f5; 
+            margin: 20px;
+        }
+
+        /*  NAVIGATION BAR */
+        
+         nav {
+            background: linear-gradient(to right, #6c33a9, #275d8a); 
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            
+        }
+
+            nav a {
+                color: white;
+                font-size: 20px; /* font size */
+                font-weight: bold; /* font */
+                margin: 0 25px;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 8px;
+            }
+
+              
+                nav a:hover {
+                    background: white;
+                    color: #2575fc;
+                }
+
+                nav a:active {
+                    background: yellow;
+                    color: black;
+                }
+
+        /* Headings */
+        h2 {
+            background: linear-gradient(to right, #6c33a9, #275d8a);
+            padding: 10px;
+            color: white;
+            border-radius: 50px;
+        }
+
+        /* Experience list */
+        .exp {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        /* Skills table */
+        .skill-bar-container{
+            width: 90%;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            height: 12px;
+            margin-left: 20px;
+            overflow: hidden;
+        }
+
+        .skill-fill{
+            height: 100%;
+            background: linear-gradient(to right, #6c33a9, #275d8a);
+            border-radius: 5px;
+            animation: fillskill 1.5s ease-out forwards;
+        }
+        @keyframes fillskill {
+            0% { width: 0;}
+            
+        }
+
+
+        .skill-table {
+            width: 95%;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skill-table :hover{
+             transform: translate(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+        }
+        .exp li{
+            background-color: #ffff;
+            border-left: 5px solid #6c33a9;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+
+        }
+
+
+        .skill-row {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 8px;
+        }
+        .skill-row span:first-child {
+            position: relative;
+            padding: 15px;
+        }
+        .skill-row span:first-child::before {
+            content: ".";
+            font-size: xx-large;
+            color: #6c33a9;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        } 
+
+            .skill-row img {
+                width: 50px;
+                height: 50px;
+                margin-left: 10px;
+            }
+
+        /* Project section */
+        .project-box {
+            background: white;
+            padding: 20px;
+            width: 95%;
+            margin: auto;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transform: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-box :hover {
+            transform: translate(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .exp li{
+            background-color: #ffff;
+            border-left: 5px solid #6c33a9;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+
+        }
+
+        .project-row {
+            margin-bottom: 30px;
+        }
+
+        /* Screenshot layout */
+        .project-content {
+            display: flex;
+            gap: 20px;
+        }
+
+            .project-content img, .project-content video {
+                width: 250px;
+                border: 2px solid #2575fc;
+                border-radius: 8px;
+            }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+            .project-title img {
+                width: 30px;
+                margin-left: 10px;
+            }
+        .atm
+    
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills_projects.html#skills">Skills</a>
+        <a href="index.html#contact">Contact Me</a>
+        <a href="skills_projects.html#work-exp">Work Experience</a>
+        <a href="skills_projects.html#my-projects">My Projects</a>
+    </nav>
+
+
+    <!--  WORK EXPERIENCE -->
+    <h2 id="work-exp">Work Experience</h2>
+    <ul class="exp">
+        <li>Volunteer - Alkhidmat Camp (Flood Relief) 2025</li>
+        <li>Class Representative</li>
+        <li>Workshop - Robotics</li>
+        <li>Workshop - MS Office</li>
+    </ul>
+
+    <!-- SKILLS -->
+   
+    <h2 id="skills" style="text-align:left; margin-top:40px;">Skills</h2>
+
+    <div class="skill-bar-container">
+        <div class="skill-fill" style="width: 90%;"></div>
+    </div>    
+
+
+    <div class="skill-table">
+
+        <h3>Hard Skills</h3>
+
+        <div class="skill-row">
+            <span>Web Development</span>
+            <span>90% <img src="html css logo.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>MS Word</span>
+            <span>87% <img src="word logo.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>MS PowerPoint</span>
+            <span>90% <img src="powerpoint logo.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>Graphic Designing (Canva)</span>
+            <span>85% <img src="canva logo.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>Programming (C, C++)</span>
+            <span>90% <img src="c++ logo.png"></span>
+        </div>
+
+        <br>
+
+        <h3>Soft Skills</h3>
+
+        <div class="skill-row">
+            <span>Editing Skills</span>
+            <span>95% <img src="editing (2).png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>Team Management</span>
+            <span>90% <img src="team.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>Communication Skills</span>
+            <span>96% <img src="comm.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>Public Speaking</span>
+            <span>92% <img src="public.png"></span>
+        </div>
+
+        <div class="skill-row">
+            <span>Confidence</span>
+            <span>95% <img src="confi.png"></span>
+        </div>
+
+    </div>
+
+    <br>
+
+    <!--  PROJECTS -->
+    <h2 id="my-projects">My Projects</h2>
+
+    <div class="project-box">
+
+        <!--  Canva Poster -->
+        <div class="project-row">
+            <div class="project-title">
+                <a target="_blank" href="canva poster.pdf">Canva Poster</a>
+                <img style="width: 50px;height: 50px;" src="canva logo.png">
+            </div>
+            <div class="canva poster.pdf">
+                <img style="margin-left: 420px;" src="canva poster pic.png">
+            </div>
+        </div>
+
+        <!--  Canva Resume -->
+        <div class="project-row">
+            <div class="project-title">
+                 <a target="_blank" href="resume canva.pdf">Resume</a>
+                <img style="width: 50px;height: 50px;" src="canva logo.png">
+            </div>
+            <div style="text-align: center;" class="resume canva.pdf">
+                <img style="margin: right 25px; " src="resume 1.png">
+                <img src="resume 2.png">
+            </div>
+        </div>
+
+        <!--  Canva Business Portfolio -->
+        <div class="project-row">
+            <div class="project-title">
+                 <a target="_blank" href="business portfolio.pdf">Business Portfolio</a>
+                
+                <img style="width: 50px;height: 50px;" src="canva logo.png">
+            </div>
+            <div class="business portfolio.pdf">
+                <img src="portfolio pic 1.png">
+                <img src="portfolio pic 2.png">
+                <img src="portfolio pic 3.png">
+            </div>
+        </div>
+
+        <!-- 4 Scratch Game 1 -->
+        <div class="project-row">
+            <div class="project-title">
+                 <a target="_blank" href="chicken run.sb3">Click to download Chicken Run.sb3</a>
+                <img style="width: 50px;height: 50px;" src="scratch logo.png">
+            </div>
+            <div>
+                <video style="width: 850px; height: 600px;margin-left: 200px ; " src="chicken run video.mp4"autoplay muted loop width="300" ></video>
+            </div>
+        </div>
+
+        <!-- 5 Scratch Game 2 -->
+        <div class="project-row">
+            <div class="project-title">
+                <a target="_blank" href="water game.sb3">Click to download Water.sb3</a>
+                
+                <img style="width: 50px;height: 50px;" src="scratch logo.png">
+            </div>
+            <div>
+                <video style="width: 850px; height: 600px; margin-left: 200px;" src="water game video.mp4" autoplay muted loop width="300"></video>
+            </div>
+        </div>
+
+        <!-- 6 C++ ATM Program -->
+        <div class="project-row">
+            <div class="project-title">
+                <a target="_blank" href="atm machine 1.cpp">C++ ATM Machine</a>
+                
+                <img style="width: 50px;height: 50px;" src="c++ logo.png">
+            </div>
+            <div>
+                <img style="width: 33%; height: 450px; margin-top: 20px;" src="atm1.png">
+                <img style="width: 33%; height: 450px; margin-top: 20px;" src="atm2.png">
+                <img style="width: 33%; height: 450px; margin-top: 20px;" src="atm3.png">
+            </div>
+        </div>
+
+        <!-- 7 PowerPoint Slides -->
+        <div class="project-row">
+            <div class="project-title">
+                <a target="_blank" href="power point work.pptx">PowerPoint</a>
+                <img style="width: 60px;height: 50px;" src="powerpoint logo.png">
+            </div>
+            <div class="power point work.pptx">
+                <img style="width: 45%; height: 450px; margin-top: 20px;"src="power 1.png">
+                <img style="width: 45%; height: 450px; margin-top: 20px;" src="power 2.png">
+                 <img style="width: 45%; height: 450px; margin-top: 20px;"src="power 3.png">
+                 <img style="width: 45%; height: 450px; margin-top: 20px;"src="power 4.png">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

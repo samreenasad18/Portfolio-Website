@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio - Page 1</title>
+    <link href="htpps://fonts.googleapis.com/css2?family=Poopins:wght@300;400;600;&display=swap" rel="stylesheet">
+
+
+    <style>
+         a, button{
+            transition: all 0.2s ease;
+        }
+
+        /* PAGE BACKGROUND */
+        body {
+            margin: 0;
+            font-family: 'Poopins', sans-serif;
+            background: #dce7f5;  
+        }
+
+        /*  NAVIGATION BAR */
+        nav {
+            background: linear-gradient(to right, #6c33a9, #275d8a); 
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            
+        }
+
+            nav a {
+                color: white;
+                font-size: 20px; /* font size */
+                font-weight: bold; /* font */
+                margin: 0 25px;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 8px;
+            }
+
+              
+                nav a:hover {
+                    background: white;
+                    color: #2575fc;
+                }
+
+                nav a:active {
+                    background: yellow;
+                    color: black;
+                }
+
+        /* Profile Picture */
+        .profile-pic {
+            display: block;
+            width: 200px;
+            height:210px;
+            margin: 30px auto;
+            border-radius: 100%;
+            border: 4px solid #866cdd;
+        }
+        h2 {
+            background: linear-gradient(to right, #6c33a9, #275d8a);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .about-me
+        {
+            width: 88%;
+            margin: 20px auto 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+
+        }
+
+        /* Contact Section */
+        .contact-box {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact rows */
+        .contact-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 5px;
+            font-size: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .contact-row img {
+                width: 10px;
+                height: 10px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills_projects.html#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+        <a href="skills_projects.html#work-exp">Work Experience</a>
+        <a href="skills_projects.html#my-projects">My Projects</a>
+    </nav>
+
+    <!-- PROFILE PIC -->
+    <img src="pic.jpg" class="profile-pic">
+
+    <!-- ABOUT ME -->
+    <div style="width:80%; margin:auto; font-size:20px;">
+        <h2>About Me</h2>
+        <div class="about-me">
+        <p>
+           "I am a passionate web developer who loves creating clean and responsive websites.I enjoy turning ideas into functional web pages using HTML, CSS, and JavaScript. I specialize in clean UI designs. I enjoy solving problems through logical and modern websites. Learning new technologies excites me, and I always aim to improve my skills. I focus on writing organized code and building user-friendly designs.My goal is to grow as a developer and build impactful digital experiences."
+        </p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <h2 id="contact" style="text-align:center; margin-top:40px;">Contact Me</h2>
+
+    <div class="contact-box">
+
+        <!-- WhatsApp -->
+        <div class="contact-row">
+            <a href="https://wa.me/+923268592722" target="_blank">WhatsApp: +923269592722</a>
+            <img style="width: 5%;height: 5%;" src="wlogo.png" alt="whatsapp logo">
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-row">
+            <a href="https://www.instagram.com/aesthetic_by_sa" target="_blank"> Instagram: aesthetic_by_sa</a>
+            <img style="width: 5%;height: 5%;"src="insta-logo.png" alt=" insta logo">
+        </div>
+
+        <!-- Gmail -->
+        <div class="contact-row">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samreenasad03@gmail.com" target="_blank">Gmail: samreenasad03@gmail.com</a>
+            <img style="width: 5%;height: 5%;"src="gmail-logo.png" alt="">
+        </div>
+
+        <!-- Location -->
+        <div class="contact-row">
+            <a href="" target="_blank">Location</a>
+            <img style="width: 5%;height: 5%;"src="location.png" alt="">
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
